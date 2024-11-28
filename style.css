@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.header{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container{
+    display: flex;
+}
+
+.header.logo img{
+    height: 5px;
+    width: 5px;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav ul li {
+    margin-left: 50px;
+}
+
+.nav a{
+color: white;
+text-decoration: none;
+align-items: center;
+}
+
+.header .search-bar {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 14px;
+}
+
+.hero{
+    background: url(nasa2.webp) ;
+    height: 50vh;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.featured {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero .btn{
+    border: red;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20PX;
+    border-radius: 5PX;
+    width: 30%;
+}
+
+.CARD h3 {
+    margin: 0;
+}
+
+@media (max-width:768PX) {
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 100;
+        margin-bottom: 20PX;
+    }
+}
+
+.featured-articales{
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.featured-articales h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.artical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:20px;
+}
+
+.artical-card{
+    background:#fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artical-card:hover {
+    transform: translate(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.artical-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.artical-content {
+    padding: 20px;
+}
+
+.artical-type{
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.artical-content h3{
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.abc-section{
+position: relative;
+height: 100%;
+background: url(new-background.webp);
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-align: left;
+}
+
+.abc-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0,0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.abc-content h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.abc-content p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.abc-content a{
+    color: white;
+}
+
+.abc-content .signup-btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff4500;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.abc-content .signup-btn:hover{
+    background-color: #ff6347;
+}
